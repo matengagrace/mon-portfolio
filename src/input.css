@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme{
+    /* Couleurs */
+    --color-blue-50:#C4DEFD;
+    --color-blue-50:#C4DEFD;
+    --color-blue-200:#043873;
+    --color-blue-king-300:#111519;
+    --color-yellow-50:#FFE492;
+    --color-white:#FFFFFF;
+
+    /* Points d'arrets (breakpoints) */
+    --breakpoint-sm: 320px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1152px;
+    --breakpoint-xl: 1300px;
+    --breakpoint-2xl: 1920px;
+}
+
+.btn{
+    @apply p-2.5 px-5 rounded-sm cursor-pointer;
+}
+
+.btn-primary{
+    @apply flex bg-[#009CF8] text-white justify-center items-center gap-2 cursor-pointer hover:bg-[#003C6B] hover:text-white hover:border  hover:border-[#009CF8] hover:m-0 duration-500;
+}
