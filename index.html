@@ -16,6 +16,15 @@
       html {
         scroll-behavior: smooth;
       }
+
+      /* #menuToggle{
+        display: none;
+      }
+      @media (width>=768) {
+        #menuToggle{
+        display: block;
+        }
+      } */
     </style>
   </head>
   <body class="bg-slate-900 text-white">
@@ -39,14 +48,16 @@
         <a href="#mainContent" class="text-xl font-bold cursor-pointer"
           >Matenga Grace</a
         >
-      <div class="md:hidden">
+      <div class="block md:hidden">
         <nav class="space-x-6 hidden md:block">
           <a href="#mainContent" class="hover:text-blue-400">Accueil</a>
           <a href="#about" class="hover:text-blue-400">À propos</a>
           <a href="#projects" class="hover:text-blue-400">Mes Projets</a>
           <a href="#contact" class="hover:text-blue-400">Contact</a>
         </nav>
-          <img id="menuToggle" src="src/images//icones/menu (1).png" class="cursor-pointer" alt="menu">
+        <div class="block md:hidden">
+          <img id="menuToggle" class="space-x-6 block md:hidden cursor-pointer" src="src/images/icones/menu.png" alt="bouton de menu mobile">
+        </div>
         </div>
       </header>
 
