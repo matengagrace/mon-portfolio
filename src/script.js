@@ -33,3 +33,19 @@
 
       // Current Year
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+          mobileMenu.classList.add("hidden");
+        });
+      });
