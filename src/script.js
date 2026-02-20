@@ -53,6 +53,7 @@ menuToggle.addEventListener("click", function (event) {
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", function () {
+    menuToggle.setAttribute("src", "src/images/icones/menu.png");
     mobileMenu.classList.add("hidden");
   });
 });
