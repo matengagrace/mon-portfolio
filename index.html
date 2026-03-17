@@ -21,22 +21,16 @@
   </head>
   <body class="bg-slate-900 text-white">
     <!-- ================= LOADER ================= -->
-    <div
-      id="loader"
-      class="fixed inset-0 flex flex-col items-center justify-center bg-slate-900 z-50"
-    >
-      <div
-        class="w-40 h-40 rounded-full border-8 border-slate-700 border-t-blue-500 animate-spin"
-      ></div>
-      <p id="progressText" class="mt-6 text-lg">Chargement... 0%</p>
+    <div id="loader" class="fixed inset-0 flex flex-col items-center justify-center bg-slate-900 z-50">
+      <div class="w-40 h-40 rounded-full border-8 border-slate-700 border-t-blue-500 animate-spin"></div>
+      <p id="progressText" class="mt-6 text-lg"></p>
     </div>
 
     <!--  MAIN  -->
     <div id="mainContent" class="hidden">
       <!-- NAVBAR -->
       <header
-        class="flex justify-between items-center p-6 w-[96%] md:w-[80%] mx-auto sticky top-0 md:mb-10 bg-slate-900 shadow-lg"
-      >
+        class="flex justify-between items-center p-6 w-[96%] md:w-[80%] mx-auto sticky top-0 md:mb-10 bg-slate-900 shadow-lg">
         <a href="#mainContent" class="text-xl font-bold cursor-pointer"
           >Matenga Grace</a
         >
@@ -67,8 +61,7 @@
       <section
         class=" flex flex-col md:flex-row md:grid md:grid-cols-2 items-center w-[90%] md:w-[80%] justify-end mx-auto md:mt-15 md:p-6"
       >
-        <div
-          class="flex flex-col items-center justify-center text-center  px-6 md:px-6 py-24"
+        <div class="flex flex-col items-center justify-center text-center  px-6 md:px-6 py-24"
         >
           <h2 id="typingTitle" class="text-3xl md:text-5xl font-bold mb-4"></h2>
           <p class="text-slate-300 max-w-xl text-center">

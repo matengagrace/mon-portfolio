@@ -28,13 +28,13 @@ function startTyping() {
     typingElement.textContent = text.slice(0, index + 1) + "|";
     index++;
     if (index === text.length) clearInterval(typingInterval);
-  }, 80);
+  }, 100);
 }
 
-// Current Year
+// recupere l'année actuelle 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Mobile Menu Toggle
+// affiche le menu mobile
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 menuToggle.style.cursor = 'pointer';
@@ -49,7 +49,7 @@ menuToggle.addEventListener("click", function (event) {
   }
 });
 
-// Close mobile menu when a link is clicked
+// ferme le menu mobile lorsque l'utilisateur clique sur un lien
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", function () {
