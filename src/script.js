@@ -57,3 +57,19 @@ mobileMenuLinks.forEach((link) => {
     mobileMenu.classList.add("hidden");
   });
 });
+
+  function openModal() {
+    document.getElementById('cvModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('cvModal').classList.add('hidden');
+  }
+
+  function closeModalOnBackdrop(event) {
+    // Si on clique sur le fond (backdrop), fermer la modale
+    if (event.target.id === 'cvModal') {
+      closeModal();
+    }
+}
+
